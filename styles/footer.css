@@ -1,0 +1,36 @@
+.rodape{
+    background-color: var(--color-qua);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.rodape-rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.rodape-titulo{
+    font-family: var(--texto-prim);
+    font-weight: 900;
+}
+
+.rodape-texto{
+    font-family: var(--texto-prim);
+    font-weight: 500;
+    
+}
+
+.rodape-copy{
+    font-family: var(--texto-prim);
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1280px){
+
+}

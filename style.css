@@ -1,0 +1,20 @@
+@import url("/styles/header.css");
+@import url("/styles/main.css");
+@import url("/styles/footer.css");
+@import url("/styles/carrosel.css");
+@import url("/styles/who.css");
+
+:root{
+    --color-prim: #27005D;
+    --color-sec: #9400FF;
+    --color-tec: #AED2FF;
+    --color-qua: #E4F1FF;
+    --texto-prim: "Poppins";
+}
+
+body{
+    background-color: var(--color-prim);
+    font-family: var(--texto-prim);
+    font-size: 16px;
+    font-weight: 400;
+}

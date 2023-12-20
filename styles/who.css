@@ -1,0 +1,30 @@
+.foto{
+    background-color: var(--color-qua);
+    margin: 5em 0;
+    padding: 5em 1em;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+    border-radius: 10px;
+}
+
+.foto-douglas{
+    width: 23em;
+    border: groove 1em var(--color-prim);
+    border-radius: 10px;
+}
+
+.foto-titulo{
+    font-family: var(--texto-prim);
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.foto-texto{
+    font-family: var(--texto-prim);
+    font-size: 1.5em;
+    text-align: left;
+    line-height: 1.5em;
+}

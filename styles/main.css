@@ -1,0 +1,129 @@
+.primario{
+    background-color: var(--color-qua);
+    margin: 5em 0 2.5em 0;
+    padding: 1em 0 1em 0;
+    border: 1em double var(--color-prim);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.primario-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.primario-titulo{
+    display: flex;
+    text-align: center;
+    font-family: var(--texto-prim);
+    font-size: 36px;
+}
+
+.primario-subtitulo{
+    padding: 0 1em;
+    display: flex;
+    text-align: center;
+    font-family: var(--texto-prim);
+    font-size: 25px;
+}
+
+.primario-texto{
+    padding: 0 3em;
+    font-family: var(--texto-prim);
+    font-size: 20px;
+}
+
+.primario-div-botao{
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.primario-botao{
+    color: white;
+    padding: 1em 7em;
+    background-color: var(--color-sec);
+    border-radius: 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.primario-div-imagem{
+    padding: 1em 0;
+    text-align: center;
+}
+
+.secundario{
+    margin: 2.5em 0 5em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.secundario-lo{
+    background-color: var(--color-qua);
+    border-radius: 1em;
+    border: 1em groove var(--color-prim);
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.secundaria-texto{
+    padding: 0 3em;
+    font-family: var(--texto-prim);
+    font-size: 20px;
+}
+
+@media screen and (min-width: 1280px){
+    .primario{
+        background-color: var(--color-qua);
+        margin: 5em 10em 2.5em 10em;
+        padding: 5em 0 5em 0;
+        border: 1em double var(--color-prim);
+        border-radius: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .primario-titulo{
+        color: var(--color-sec);
+    }
+
+    .primario-div-botao{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .primario-botao:hover {
+        background-color: #4d0084;
+    }
+
+    .secundario{
+        margin: 5em 0;
+        padding: 0 10em;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .secundario-lo{
+        margin: 0 1em;
+        padding: 3em;
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .secundaria-texto{
+        padding: 0;
+    }
+}

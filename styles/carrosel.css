@@ -1,0 +1,41 @@
+.carrosel{
+    padding: 1em;
+}
+
+.carrosel-div{
+    background-color: var(--color-qua);
+    margin: 3em 0 0 0;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    border-radius: 1em;
+}
+
+.carrosel-div-ultimo{
+    background-color: var(--color-qua);
+    margin: 3em 0 3em 0;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    border-radius: 1em;
+}
+
+.carrosel-titulo{
+    font-family: var(--texto-prim);
+    font-size: 25px;
+}
+
+.swiper {
+    width: 300px;
+    height: 220px;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="shortcut icon" href="/assets/icone.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Rethink+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>DouglasDDev</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-div">
+            <input type="checkbox" id="menu" class="cabecalho-menu">
+            <label for="menu">                
+                <span class="cabecalho-menu-menu menu-ham"></span>
+            </label>
+
+            <ul class="menu">
+                <li class="menu-botao-texto botao-texto">MENU</li>
+                <li class="menu-botao-texto"><a href="/index.html" class="menu-botao-link">INICIO</a></li>
+                <li class="menu-botao-texto"><a href="/port.html" class="menu-botao-link">PORTIFOLIO</a></li>
+                <li class="menu-botao-texto"><a href="/who.html" class="menu-botao-link">QUEM SOU</a></li>
+            </ul>
+        </div>
+
+        <div class="cabecalho-div">
+            <a href="/index.html"><img src="/assets/logo.svg" width="50px" alt="logo" class="logo"></a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Primerio Slide -->
+        <section class="carrosel">
+            <div class="carrosel-div">
+                <h2 class="carrosel-titulo">
+                    Templates para Sites
+                </h2>
+                
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/assets/s1-1.svg" width="300px"></div>
+                    <div class="swiper-slide"><img src="/assets/s1-2.svg" width="300px"></div>
+                    <div class="swiper-slide"><img src="/assets/s1-3.svg" width="300px"></div>
+                    ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Segundo Slide -->
+        <section class="carrosel">
+            <div class="carrosel-div">
+                <h2 class="carrosel-titulo">
+                    Templates para Cardápio
+                </h2>
+                
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/assets/s2-1.svg" width="300px"></div>
+                    <div class="swiper-slide"><img src="/assets/s2-2.svg" width="300px"></div>
+                    ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- Terceiro Slide -->
+        <section class="carrosel">
+            <div class="carrosel-div-ultimo">
+                <h2 class="carrosel-titulo">
+                    Templates para Landpage
+                </h2>
+                
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/assets/s3-1.svg" width="300px"></div>
+                    <div class="swiper-slide"><img src="/assets/s3-2.svg" width="300px"></div>
+                    ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="rodape-sec">
+            <div class="rodape">
+                <div class="rodape-div">
+                    <h4 class="rodape-rodape">Contato</h4><br>
+                    <h5 class="rodape-rodape">Endereço: Travessa Professora Elza Bittencourt, 61 - Niterói - RJ</h5>
+                </div>
+    
+                <div class="rodape-rede">
+                    <a href="https://wa.me/5521980091573"><img src="/assets/whats.svg" width="30px" alt="whatsapp"></a>
+                    <a href="https://www.instagram.com/douglas.deziderio/"><img src="/assets/insta.svg" width="30px" alt="instagram"></a>
+                    <a href="https://www.linkedin.com/in/douglas-dezidério-534a8922b/"><img src="/assets/link.svg" width="30px" alt="linkedin"></a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="rodape-sec">
+            <p class="copy">© 2022 por Douglas Deziderio - DEV.</p>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+                const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+        
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            },
+        
+            // Navigation arrows
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        
+            // And if we need scrollbar
+            scrollbar: {
+            el: '.swiper-scrollbar',
+            },
+
+            autoplay: {
+            delay: 3000,
+            },
+        });
+    </script>
+</body>
+</html>
